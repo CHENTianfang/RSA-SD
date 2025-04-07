@@ -1,0 +1,298 @@
+/* -----------------------------知情同意书----------------------------- */
+.consent-container {
+    line-height: 1.6;
+    font-size: 20px;
+}
+.consent-container h2 {
+    margin-bottom: 20px;
+}
+.consent-container h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.consent-container p {
+    margin-bottom: 10px;
+}
+.consent-container ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* -----------------------------主实验----------------------------- */
+.containerL {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    margin: 10px 0;
+}
+
+h3 {
+    font-style: italic;
+}
+
+.character-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.avatar {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.dialogue, .question {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.mushroom-container {
+    margin: 20px 0;
+    width: 80%;
+}
+
+.mushroom-box {
+    background-color: #b89f8d;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.mushroom-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mushroom {
+    text-align: center;
+}
+
+.mushroom img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.value {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.info-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 15px 0;
+    cursor: pointer;
+    width: 120px;
+    margin: 0 auto;
+    color:grey;
+    font-size: 12px;
+}
+
+.info-button:hover {
+    background-color: #f0f0f0;
+}
+
+.selection-area {
+    margin: 20px 0;
+}
+
+select {
+    padding: 8px;
+    margin: 0 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.continue-button {
+    background-color: #5b9bd5;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.continue-button:hover {
+    background-color: #4a8ac5;
+}
+
+.verticleMid {
+        display: flex;
+        flex-direction: column; /* 让 p 元素纵向排列 */
+        justify-content: center; /* 垂直居中 */
+
+}
+
+.verticleMid > p {
+    font-size: 22px;
+}
+
+.mushroom > p {
+    font-size: 20px;
+} 
+
+/*--------------------------组件-------------------------*/
+.jspsych-display-element {
+    font-size: 20px !important;
+}
+
+.mb15{
+    margin-bottom: 15px;
+}
+
+.horizonFlex {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    /* 设置新的宽度和高度 */
+    width: 25px !important;
+    height: 25px !important;
+  
+    /* 可以添加其他样式来美化单选按钮，比如背景颜色、边框等 */
+    border-radius: 50%; /* 使单选按钮变为圆形 */
+    background-color: #fff; /* 设置背景颜色为白色 */
+    border: 2px solid #333; /* 设置边框为2像素宽的黑色边框 */
+    margin-right: 5px; /* 增加一些右边距，使单选按钮和标签之间有一些间隔 */
+  }
+
+  .jspsych-survey-likert-opts {
+    padding: 0 !important;
+    width: 600px !important;
+  }
+  .jspsych-survey-likert-statement {
+    padding-top: 20px !important;
+  }
+
+  .borderRadius {
+    border-radius: 20px;
+  }
+
+  .fullscreen-image {
+    position: fixed;  /* 固定定位 */
+    bottom: 0;        /* 距离底部0 */
+    left: 0;          /* 距离左侧0 */
+    width: 100vw;     /* 让图片宽度占满屏幕 */
+    height: auto;     /* 自动调整高度，保持图片比例 */
+    object-fit: cover; /* 保持图片的填充效果，可能裁剪部分图片 */
+    z-index: -999;
+}
+
+
+/*--------------------------九宫格-------------------------*/
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.mushroom-grid {
+    border:1px solid;
+    background-color:#b89f8d;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    overflow: auto;
+}
+
+.color-row, .mushroom-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.empty-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 33px;
+    color: #2e2930;
+    font-weight: BOLD;
+}
+
+.empty-cell, .color-cell, .type-cell, .mushroom-cell {
+    flex: 1;
+    text-align: center;
+}
+
+
+.type-cell img {
+    /* 控制第一列黑白示意图的大小 */
+    width: 80px;
+    height: 80px;
+}
+
+.mushroom-row > div > img {
+    width: 50px;
+    height: 50px;
+}
+
+.color-cell > img {
+    border-radius: 10px;
+}
+
+/*--------------------指导语--------------------*/
+.horizonFlex div img {
+    width: 100px;  /* 设置具体宽度 */
+    height: 100px; /* 设置具体高度 */
+}
+
+/*--------------------休息试次----------------*/
+.break-container {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.break-message {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.continue-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button:hover {
+    background-color: #0056b3;
+}
+
+.st {
+    font-weight: bold;
+}
